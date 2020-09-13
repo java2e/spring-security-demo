@@ -7,10 +7,10 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 @SpringBootApplication
 @EnableConfigurationProperties(AppProperties.class)
-public class SpringSocialApplication {
+public class SpringSecurityDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringSocialApplication.class, args);
+		SpringApplication.run(SpringSecurityDemoApplication.class, args);
 	}
 
 
