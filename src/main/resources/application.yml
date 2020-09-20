@@ -23,9 +23,9 @@ spring:
               scope:
                 - email
                 - profile
-            okta:
-                clientId: 121189305185277
-                clientSecret: 42ffe5aa7379e8326387e0fe16f34132
+            auth0:
+                clientId: ZaNubS9vEuLqoKcnFCGx7fMdMrKFwBCF
+                clientSecret: wqJcwLlr0xyNMZmPYiBGQXjYxD2XKAR71Ss4eP8bFBJOxtYWHzxTQSQb4VK-wpBj
                 redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
                 scope:
                   - email
@@ -46,14 +46,11 @@ spring:
                 - read:user
           provider:
             facebook:
-              authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
+              authorizationUri: dev-4actfdcx.eu.auth0.com
               tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
               userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
-            okta:
-              authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
-              tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
-              userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
-
+            auth0:
+              issuer-uri: https://dev-4actfdcx.eu.auth0.com/
 app:
   auth:
     tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
